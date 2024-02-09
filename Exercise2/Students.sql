@@ -1,4 +1,4 @@
-CREATE DATABASE "Faculty Members"
+CREATE DATABASE "Students"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
@@ -9,13 +9,13 @@ CREATE DATABASE "Faculty Members"
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
 
-CREATE TABLE public.faculty_members
+CREATE TABLE public.students
 (
-    member_id integer NOT NULL,
+    student_id integer NOT NULL,
     first_name character(36) NOT NULL,
     last_name character(50) NOT NULL,
-    department character(50) NOT NULL,
+    major character(50) NOT NULL,
     email character(50) NOT NULL,
     phone_number character(28) NOT NULL,
-    PRIMARY KEY (member_id)
+    PRIMARY KEY (student_id)
 );
